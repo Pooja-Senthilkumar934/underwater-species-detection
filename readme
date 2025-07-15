@@ -1,0 +1,25 @@
+**project description:**
+       - This is deep learning project for the detection of underwater species.
+       - It is a YoloV8 based detection model trained on the dataset collected from various sources.
+       - The dataset is basically splitted in 8:2.
+       - This model can be used in both real time video detection and detection in images.
+
+**steps to run**
+       - In final.py file alter the necessary paths accordingly.
+
+       - In terminal run:
+              - conda create -n underwater python=3.9
+              - pip install -r ./MODEL/Requirements.txt
+              - python final.py (This will run the final.py file)
+
+**files and folders details**
+       - aqua_dataset folder is a folder containing the dataset.
+       - new is a folder of other images used for testing.
+       - runs is a folder of files created by training the model.
+       - best.pt file inside ./MODEL/runs/detect/train16/best.pt is the final weight+arch file.(**provide the path for this file in final.py correctly**)
+       - new.py is used for dataset preprocessing [note:no need to run this file].
+       - main.py is used for training the model [note:no need to run this file].
+       - final.py is used for prediction [**note:run only this file**]
+       - yolov8n.pt is the basic yolov8 weight file from ultralytics.(**provide the path for this file in final.py correctly**)
+       - **provide the path for the image to be tested correctly in final.py**
+
